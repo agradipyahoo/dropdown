@@ -11,6 +11,12 @@ var config = {
     filename: 'index.js'
   },
   devtool: 'source-map',
+  externals:{
+    'react':'React',
+    'react-dom':'ReactDOM',
+    'react-starter-components':'core',
+    'react-starter-components':'components'
+  },
   module : {
     loaders : [
       {

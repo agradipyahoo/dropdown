@@ -2,7 +2,7 @@
   "name": "dropdown",
   "version": "1.0.0",
   "description": "Dropdown UI widgets with React.js",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/agradipyahoo/dropdown.git"
@@ -20,6 +20,12 @@
     "url": "https://github.com/agradipyahoo/dropdown/issues"
   },
   "homepage": "https://github.com/agradipyahoo/dropdown#readme",
+  "dependencies":{
+    "react": "15.3.0",
+    "react-dom": "15.3.0",
+    "react-starter-components": "^1.0.13",
+    "selection-manager": "^1.0.25"
+  },
   "devDependencies":{
     "babel-core": "6.13.2",
     "babel-loader": "^6.2.9",
@@ -27,10 +33,6 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-es2016": "6.11.3",
     "babel-preset-stage-2": "6.13.0",
-    "react": "15.3.0",
-    "react-dom": "15.3.0",
-    "react-starter-components": "^1.0.13",
-    "selection-manager": "^1.0.25",
     "webpack": "2.1.0-beta.20",
     "rimraf": "2.5.4",
     "progress-bar-webpack-plugin": "1.9.0"
