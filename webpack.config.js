@@ -12,18 +12,19 @@ var config = {
   },
   devtool: 'source-map',
   externals:{
-    'react':'React',
-    'react-dom':'ReactDOM',
-    'react-starter-components':'core',
-    'react-starter-components':'components'
+    "react":"React",
+    "react-dom":"ReactDOM",
+    "react-starter-components":"components",
+    "react-starter-components":"core"
   },
   module : {
     loaders : [
       {
-        test : /\.jsx?/,
+        test : /\.js?/,
         include : APP_DIR,
         loader : 'babel'
-      }
+      },
+       {test: /\.css$/, loaders: ['style', 'css']}
     ]
   },
   plugins:[
