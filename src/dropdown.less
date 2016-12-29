@@ -1,0 +1,127 @@
+.drop-down {
+  background-color: #fff;
+  .drop-down-summary {
+    border: 1px solid #dce4e9;
+    padding: 5px;
+    background-color: #fff;
+    position: relative;
+    &:after{
+      content: ' ';
+      position: absolute;
+      border: 5px solid transparent;
+      border-top-color: #666;
+      right: 10px;
+      opacity: .5;
+      top: 40%;
+      cursor: pointer;
+    }
+  }
+  .drop-down-body {
+    border: 1px solid #dce4e9;
+    border-top: 0px;
+    border-radius:0 0 3px 3px;
+    box-shadow:0 1px 6px -1px #ccc;
+    background:#fff;
+  }
+  .search-box-container{
+    padding:5px;
+    .search-box{
+      border: 1px solid #dce4e9;
+      padding: 5px;
+      width:100%;
+      &:focus{
+        border: 1px solid #249eeb;
+        box-shadow: none;
+        outline:0px;
+      }
+    }
+  }
+
+  .item-list {
+    max-height: 200px;
+    overflow: auto;
+    padding:0px;
+    li {
+      list-style: none;
+      padding: 3px;
+      a{
+        text-decoration: none;
+        color: #333;
+      }
+      &:hover{
+        background: #f4f7f9;
+      }
+
+    }
+  }
+
+  .single-select-list{
+    li{
+      .action {
+        &:before {
+          margin-right: 15px;
+          content:' ';
+        }
+      }
+
+      &.active{
+        .action{
+          &:before {
+            content : '\2713';
+            margin-right:5px;
+            font-style:normal;
+          }
+        }
+      }
+    }
+  }
+
+  .multi-select-list{
+    li{
+      &.active{
+        .action{
+          &:before {
+            content : '\2611';
+            margin-right:5px;
+            font-style:normal;
+          }
+        }
+      }
+      .action{
+        &:before {
+          content:'\2610';
+          margin-right:5px;
+          font-style:normal;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 9px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 9px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+}
