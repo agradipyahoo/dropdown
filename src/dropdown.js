@@ -226,13 +226,3 @@ DropDown.propTypes = {
     selectedItems:PropTypes.array,
     selectionManager: PropTypes.object
 }
-
-
-// treeView
-
-// accordian
-
-// carousel
-
-
-// add childContext Type to pass everything to both of components from parent.
