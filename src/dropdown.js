@@ -127,8 +127,12 @@ export default class DropDown extends Component {
         super(props);
         this.onChange = this.onChange.bind(this);
         let {items: items = [],multiSelect: multiSelect = false,
-            selectionManager:selectionManager = new Selection({multiSelect:multiSelect})} = props;
+            selectionManager:selectionManager = new Selection({multiSelect:multiSelect}),selectedItems:selectedItems=[]} = props;
 
+        selectedItems.forEach(function(v){
+            selectionManager.select(v);
+        });
+        
         selectionManager.on('change', function (selected, prevSelected) {
             console.log(selected);
         });
@@ -181,7 +185,6 @@ export default class DropDown extends Component {
             showSearch: showSearch = false,
             showClearSelection:showClearSelection = false} = this.props;
         let listClassName = this.multiSelect ? 'multi-select-list' : 'single-select-list';
-
         const configs = {
             ListItem: ListItem,
             items: items,
@@ -220,6 +223,7 @@ DropDown.propTypes = {
     showsearch:PropTypes.bool,
     multiSelect:PropTypes.bool,
     showClearSelection:PropTypes.bool,
+    selectedItems:PropTypes.array,
     selectionManager: PropTypes.object
 }
 
