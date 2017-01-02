@@ -1,0 +1,101 @@
+.drop-down {
+  background-color: #fff;
+}
+.drop-down .drop-down-summary {
+  border: 1px solid #dce4e9;
+  padding: 5px;
+  background-color: #fff;
+  position: relative;
+}
+.drop-down .drop-down-summary:after {
+  content: ' ';
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: #666;
+  right: 10px;
+  opacity: .5;
+  top: 40%;
+  cursor: pointer;
+}
+.drop-down .drop-down-body {
+  border: 1px solid #dce4e9;
+  border-top: 0px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 1px 6px -1px #ccc;
+  background: #fff;
+}
+.drop-down .search-box-container {
+  padding: 5px;
+}
+.drop-down .search-box-container .search-box {
+  border: 1px solid #dce4e9;
+  padding: 5px;
+  width: 100%;
+}
+.drop-down .search-box-container .search-box:focus {
+  border: 1px solid #249eeb;
+  box-shadow: none;
+  outline: 0px;
+}
+.drop-down .item-list {
+  max-height: 200px;
+  overflow: auto;
+  padding: 0px;
+}
+.drop-down .item-list li {
+  list-style: none;
+  padding: 3px;
+}
+.drop-down .item-list li a {
+  text-decoration: none;
+  color: #333;
+}
+.drop-down .item-list li:hover {
+  background: #f4f7f9;
+}
+.drop-down .single-select-list li .action:before {
+  margin-right: 15px;
+  content: ' ';
+}
+.drop-down .single-select-list li.active .action:before {
+  content: '\2713';
+  margin-right: 5px;
+  font-style: normal;
+}
+.drop-down .multi-select-list li.active .action:before {
+  content: '\2611';
+  margin-right: 5px;
+  font-style: normal;
+}
+.drop-down .multi-select-list li .action:before {
+  content: '\2610';
+  margin-right: 5px;
+  font-style: normal;
+  font-size: 18px;
+}
+.drop-down .close {
+  position: absolute;
+  right: 30px;
+  top: 9px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+}
+.drop-down .close:hover {
+  opacity: 1;
+}
+.drop-down .close:before,
+.drop-down .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 9px;
+  width: 2px;
+  background-color: #333;
+}
+.drop-down .close:before {
+  transform: rotate(45deg);
+}
+.drop-down .close:after {
+  transform: rotate(-45deg);
+}
