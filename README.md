@@ -1,5 +1,5 @@
 # dropdown
-React Dropdown component 
+React Dropdown component
 
 Basic useful feature list:
 
@@ -7,13 +7,14 @@ Basic useful feature list:
  * Supporting Multi Select dropdown
  * Show Dropdown summary
  * Preload Tree State
- * Allowing Search option in dropdown 
+ * Allowing Search option in dropdown
  * Show clear options
- 
- 
- 
+ * TODO:Unit test cases.
+
+
+
  Basic usage
- 
+
  ```javascript
     import DropDown from "dropdown";
     import React, {PropTypes, Component} from "react";
@@ -28,12 +29,12 @@ Basic useful feature list:
         let selectedItems =[];
         selectedItems.push({id:1,name:'item' + 1});
         selectedItems.push({id:2,name:'item' + 2});
-        
-    
+
+
     ReactDOM.render(<DropDown showSearch={true} selectedItems={selectedItems} items={items} multiSelect={true}></DropDown>,app)
-    
+
  ```
- 
+
 Advanced  Supported Option.
 ```javascript
     * items:PropTypes.array.isRequired,
@@ -46,5 +47,3 @@ Advanced  Supported Option.
     * showClearSelection:PropTypes.bool,
     * selectionManager: PropTypes.object
 ```
-
-
