@@ -23,7 +23,7 @@
   "dependencies": {
     "react": "15.3.0",
     "react-dom": "15.3.0",
-    "react-starter-components": "^1.0.16",
+    "react-starter-components": "^1.0.12",
     "selection-manager": "^1.0.25"
   },
   "devDependencies": {
