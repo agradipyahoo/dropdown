@@ -19,7 +19,7 @@ Basic useful feature list:
  Basic usage
 
  ```javascript
-    import DropDown from "dropdown";
+    import DropDown from "react-dropdown-component";
     import React, {PropTypes, Component} from "react";
     import ReactDOM from 'react-dom';
     let app = document.getElementById('app');
