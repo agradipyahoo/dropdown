@@ -12,6 +12,9 @@ Basic useful feature list:
  * TODO:Unit test cases.
 
 
+ # setup
+
+ `npm install react-dropdown-component`
 
  Basic usage
 
