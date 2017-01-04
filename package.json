@@ -1,5 +1,5 @@
 {
-  "name": "dropdown",
+  "name": "react-dropdown-component",
   "version": "1.0.0",
   "description": "Dropdown UI widgets with React.js",
   "main": "lib/index.js",
