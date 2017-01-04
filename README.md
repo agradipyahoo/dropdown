@@ -6,7 +6,7 @@ Basic useful feature list:
  * Supporting Single select dropdown
  * Supporting Multi Select dropdown
  * Show Dropdown summary
- * Preload Tree State
+ * Pre Select dropdown
  * Allowing Search option in dropdown
  * Show clear options
  * TODO:Unit test cases.
