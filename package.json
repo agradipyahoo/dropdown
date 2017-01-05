@@ -1,6 +1,6 @@
 {
   "name": "react-dropdown-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dropdown UI widgets with React.js",
   "main": "lib/index.js",
   "repository": {
@@ -38,7 +38,7 @@
     "rimraf": "2.5.4"
   },
   "scripts": {
-    "build:css":"lessc src/*.less > lib/dropdown.css",
+    "build:css": "lessc src/*.less > lib/dropdown.css",
     "build": "npm run build:css && babel --presets react,es2015,stage-0 src --watch -d lib"
   }
 }
